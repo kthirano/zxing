@@ -15,10 +15,10 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.nio.file.Path;
 
-public class MultiTestCase2 extends Assert{
+public class MultiTestCase2 extends Assert {
 
   @Test
-  public void testByQuad1() throws Exception{
+  public void testByQuad1() throws Exception {
     Path testBase = AbstractBlackBoxTestCase.buildTestBase("src/test/resources/blackbox/multi-1");
 
     Path testImage = testBase.resolve("1.png");
@@ -40,7 +40,7 @@ public class MultiTestCase2 extends Assert{
     assertEquals("031415926531", result.getText());
     assertEquals(BarcodeFormat.UPC_A, result.getBarcodeFormat());
 
-  }/*
+  } /*
   @Test
   public void testByQuad2() throws Exception{
     Path testBase = AbstractBlackBoxTestCase.buildTestBase("src/test/resources/blackbox/multi-1");
@@ -59,7 +59,7 @@ public class MultiTestCase2 extends Assert{
 
   }*/
   @Test
-  public void testByQuad3() throws Exception{
+  public void testByQuad3() throws Exception {
     Path testBase = AbstractBlackBoxTestCase.buildTestBase("src/test/resources/blackbox/multi-1");
 
     Path testImage = testBase.resolve("3.png");
@@ -74,7 +74,7 @@ public class MultiTestCase2 extends Assert{
     assertEquals("031415926531", result.getText());
     assertEquals(BarcodeFormat.UPC_A, result.getBarcodeFormat());
 
-  }/*
+  } /*
   @Test
   public void testByQuad4() throws Exception{
     Path testBase = AbstractBlackBoxTestCase.buildTestBase("src/test/resources/blackbox/multi-1");
