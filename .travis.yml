@@ -1,8 +1,7 @@
 language: java
 os: linux
 dist: bionic
-#install: mvn -Ptravis -DskipTests=true -nsu -B install
-install: mvn -Ptravis -nsu -B install
+install: mvn -Ptravis -DskipTests=true -nsu -B install
 script:
   - mvn -Ptravis ${JACOCO} -nsu -B test
   - find $HOME/.m2/repository/com/google/zxing -path "*SNAPSHOT/*" -delete
