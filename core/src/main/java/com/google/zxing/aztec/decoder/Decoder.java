@@ -270,6 +270,7 @@ public final class Decoder {
     }
   }
 
+
   /**
    * <p>Performs RS error correction on an array of bits.</p>
    *
@@ -342,6 +343,12 @@ public final class Decoder {
     }
 
     return new CorrectedBitsResult(correctedBits, 100 * (numCodewords - numDataCodewords) / numCodewords);
+  }
+
+  //added for testing
+  public boolean[] testExtractBits(AztecDetectorResult a, BitMatrix matrix){
+    ddata = a;
+    return extractBits(matrix);
   }
 
   /**
